@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dach-Cynk Adam Opiełka | materiały dachowe i pokrycia dekarskie, Siemianowice Śląskie</title>
+<meta name="description" content="F.H.U. Dach-Cynk Adam Opiełka: ponad 25 lat doświadczenia w materiałach pokryciowych i izolacyjnych. Blachodachówka, blacha trapezowa, blacha na rąbek, papy termozgrzewalne. Siemianowice Śląskie." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: "#1B1F22",
+          steel: "#3D454B",
+          "steel-dark": "#2A3033",
+          silver: "#C7CDD1",
+          rust: "#C1541F",
+          "rust-deep": "#8C3A16",
+          paper: "#F3F1EC",
+          "paper-dim": "#E7E3D9",
+        },
+        fontFamily: {
+          display: ["'Big Shoulders Display'", "sans-serif"],
+          body: ["Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #F3F1EC; color: #1B1F22; }
+  h1, h2, h3, .display { font-family: 'Big Shoulders Display', sans-serif; }
+
+  .grain {
+    position: absolute; inset: 0; pointer-events: none; opacity: 0.05; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .corrugated {
+    background-image:
+      repeating-linear-gradient(115deg,
+        rgba(255,255,255,0.14) 0px, rgba(255,255,255,0.14) 2px,
+        rgba(0,0,0,0.38) 2px, rgba(0,0,0,0.38) 5px,
+        transparent 5px, transparent 34px,
+        rgba(255,255,255,0.08) 34px, rgba(255,255,255,0.08) 36px,
+        rgba(0,0,0,0.28) 36px, rgba(0,0,0,0.28) 41px
+      );
+  }
+  .corrugated-light {
+    background-image:
+      repeating-linear-gradient(115deg,
+        rgba(255,255,255,0.6) 0px, rgba(255,255,255,0.6) 2px,
+        rgba(28,32,35,0.08) 2px, rgba(28,32,35,0.08) 4px,
+        transparent 4px, transparent 34px,
+        rgba(255,255,255,0.35) 34px, rgba(255,255,255,0.35) 36px,
+        rgba(28,32,35,0.05) 36px, rgba(28,32,35,0.05) 40px
+      );
+  }
+
+  .seam-divider {
+    height: 14px;
+    background-image: repeating-linear-gradient(90deg, #C1541F 0 40px, #8C3A16 40px 44px, #C1541F 44px 84px, #1B1F22 84px 88px);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 97% 100%, 3% 100%, 0 60%);
+  }
+
+  .card-lift { transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .card-lift:hover { transform: translateY(-6px); }
+
+  .shadow-elevated { box-shadow: 0 1px 2px rgba(27,31,34,0.06), 0 12px 24px -8px rgba(27,31,34,0.18), 0 24px 48px -20px rgba(193,84,31,0.12); }
+  .shadow-floating { box-shadow: 0 2px 4px rgba(27,31,34,0.08), 0 20px 40px -12px rgba(27,31,34,0.35), 0 8px 16px -4px rgba(193,84,31,0.15); }
+
+  .btn-primary {
+    background: #C1541F; color: #F3F1EC; transition: transform 200ms cubic-bezier(0.16,1,0.3,1), background 200ms ease, box-shadow 200ms ease;
+    box-shadow: 0 8px 20px -6px rgba(193,84,31,0.55);
+  }
+  .btn-primary:hover { background: #D6631F; transform: translateY(-2px); }
+  .btn-primary:active { transform: translateY(0); background: #8C3A16; }
+  .btn-primary:focus-visible { outline: 2px solid #F3F1EC; outline-offset: 3px; }
+
+  .btn-ghost {
+    border: 1.5px solid rgba(199,205,209,0.4); color: #F3F1EC; transition: transform 200ms cubic-bezier(0.16,1,0.3,1), border-color 200ms ease, background 200ms ease;
+  }
+  .btn-ghost:hover { border-color: #C1541F; background: rgba(193,84,31,0.12); transform: translateY(-2px); }
+  .btn-ghost:focus-visible { outline: 2px solid #C1541F; outline-offset: 3px; }
+
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ""; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #C1541F;
+    transition: width 250ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .nav-link:hover::after { width: 100%; }
+  .nav-link:focus-visible { outline: 2px solid #C1541F; outline-offset: 4px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  .fade-up { animation: fadeUp 700ms cubic-bezier(0.16,1,0.3,1) both; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .delay-1 { animation-delay: 100ms; } .delay-2 { animation-delay: 220ms; } .delay-3 { animation-delay: 340ms; } .delay-4 { animation-delay: 460ms; }
+
+  .duotone-img { position: relative; }
+  .duotone-img img { filter: grayscale(0.35) contrast(1.05) brightness(0.85); }
+  .duotone-img::after {
+    content: ""; position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(27,31,34,0.95) 0%, rgba(27,31,34,0.82) 38%, rgba(27,31,34,0.35) 62%, rgba(27,31,34,0.05) 82%),
+      linear-gradient(to top, rgba(27,31,34,0.5), rgba(27,31,34,0) 45%);
+  }
+  .text-shadow-soft { text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
+</style>
+</head>
+<body class="bg-paper text-ink antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-rust focus:text-paper focus:px-4 focus:py-2">Przejdź do treści</a>
+
+<!-- HEADER -->
+<header class="fixed top-0 inset-x-0 z-40 bg-ink/95 backdrop-blur border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <span class="leading-none">
+        <span class="block display font-800 text-paper text-xl tracking-tight uppercase">Dach-Cynk</span>
+        <span class="block text-[11px] text-silver tracking-[0.2em] uppercase">Adam Opiełka</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-9 text-sm text-silver font-medium">
+      <a href="#o-firmie" class="nav-link hover:text-paper">O firmie</a>
+      <a href="uslugi.html" class="nav-link hover:text-paper">Usługi</a>
+      <a href="#opinie" class="nav-link hover:text-paper">Opinie</a>
+      <a href="#kontakt" class="nav-link hover:text-paper">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:+48692161880" aria-label="Zadzwoń: 692 161 880" class="btn-primary inline-flex items-center gap-2 rounded-sm px-3.5 sm:px-5 py-2.5 text-sm font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="hidden sm:inline">692 161 880</span>
+      </a>
+      <button type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-sm border border-white/15 text-paper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-ink/98 px-5 py-5 flex flex-col gap-1 text-silver font-medium">
+    <a href="#o-firmie" class="py-2.5 hover:text-paper">O firmie</a>
+    <a href="uslugi.html" class="py-2.5 hover:text-paper">Usługi</a>
+    <a href="#opinie" class="py-2.5 hover:text-paper">Opinie</a>
+    <a href="#kontakt" class="py-2.5 hover:text-paper">Kontakt</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="relative bg-ink text-paper overflow-hidden pt-20">
+  <div class="grain"></div>
+  <div class="absolute right-0 top-0 bottom-0 w-full md:w-[52%] corrugated opacity-90" style="clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+  <div class="absolute right-0 top-0 bottom-0 w-full md:w-[52%]" style="clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%); background: linear-gradient(115deg, rgba(27,31,34,0.95), rgba(27,31,34,0.3) 40%, rgba(193,84,31,0.25));"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-24 md:pt-24 md:pb-32">
+    <div class="max-w-2xl">
+      <h1 class="fade-up display font-900 uppercase leading-[0.92] tracking-tight text-5xl sm:text-6xl lg:text-7xl">
+        Dach, na którym<br />można polegać<span class="text-rust">.</span>
+      </h1>
+      <p class="fade-up delay-2 mt-7 text-lg text-silver leading-[1.7] max-w-xl">
+        Ponad 25 lat doświadczeń w obsłudze rynku materiałów budowlanych. Wspomagamy wykonawców i klientów indywidualnych w dostawach na budowę oraz w montażu pokryć dachowych, od blachy po papę termozgrzewalną.
+      </p>
+
+      <div class="fade-up delay-3 mt-9 flex flex-wrap gap-4">
+        <a href="tel:+48692161880" class="btn-primary inline-flex items-center gap-2 rounded-sm px-7 py-3.5 font-semibold">
+          Zadzwoń: 692 161 880
+        </a>
+        <a href="uslugi.html" class="btn-ghost inline-flex items-center gap-2 rounded-sm px-7 py-3.5 font-semibold">
+          Zobacz usługi
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <dl class="fade-up delay-4 mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-white/10 pt-8">
+        <div>
+          <dt class="display font-800 text-4xl text-paper">25<span class="text-rust">+</span></dt>
+          <dd class="text-xs uppercase tracking-wider text-silver mt-1">lat doświadczenia</dd>
+        </div>
+        <div>
+          <dt class="display font-800 text-4xl text-paper">100<span class="text-rust">%</span></dt>
+          <dd class="text-xs uppercase tracking-wider text-silver mt-1">materiał + montaż</dd>
+        </div>
+        <div>
+          <dt class="display font-800 text-4xl text-paper">1</dt>
+          <dd class="text-xs uppercase tracking-wider text-silver mt-1">kontakt na budowie i w hurtowni</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="seam-divider"></div>
+
+<!-- O FIRMIE -->
+<section id="o-firmie" class="relative bg-paper py-24 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid md:grid-cols-12 gap-12">
+    <div class="md:col-span-4">
+      <p class="display uppercase tracking-[0.3em] text-rust text-sm font-700 mb-4">O firmie</p>
+      <h2 class="display font-900 uppercase text-4xl sm:text-5xl leading-[0.95] tracking-tight text-ink">
+        F.H.U.<br />Dach-Cynk<br /><span class="text-rust">Adam Opiełka</span>
+      </h2>
+    </div>
+    <div class="md:col-span-8 md:pt-2">
+      <p class="text-lg leading-[1.75] text-steel-dark">
+        Ponad 25 lat doświadczeń w obsłudze rynku materiałów budowlanych. Wspomagamy z sukcesami wykonawców oraz klientów w procesach dostaw na ich budowy. Specjalizujemy się w materiałach pokryciowych i izolacyjnych, oferując materiały dachowe wraz z usługą wykonania.
+      </p>
+      <p class="mt-5 text-lg leading-[1.75] text-steel-dark">
+        Wykonawstwo obejmuje pokrycia z pap termozgrzewalnych oraz montaż pokryć z blachy: blachodachówki, blachy trapezowej i blachy na rąbek. Zapraszamy do współpracy branżowych specjalistów oraz klientów poszukujących profesjonalnej obsługi.
+      </p>
+
+      <div class="mt-10 grid sm:grid-cols-3 gap-5">
+        <div class="bg-white rounded-sm p-5 shadow-elevated border-l-4 border-rust">
+          <p class="text-xs uppercase tracking-wider text-steel font-semibold">Zawód</p>
+          <p class="display font-700 text-2xl text-ink mt-1">Dekarz</p>
+        </div>
+        <div class="bg-white rounded-sm p-5 shadow-elevated border-l-4 border-rust">
+          <p class="text-xs uppercase tracking-wider text-steel font-semibold">Obszar działania</p>
+          <p class="display font-700 text-2xl text-ink mt-1">Siemianowice Śląskie i okolice</p>
+        </div>
+        <div class="bg-white rounded-sm p-5 shadow-elevated border-l-4 border-rust">
+          <p class="text-xs uppercase tracking-wider text-steel font-semibold">Branża</p>
+          <p class="display font-700 text-2xl text-ink mt-1">Materiały budowlane</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USŁUGI PREVIEW -->
+<section class="relative bg-steel-dark py-24 sm:py-28">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div>
+        <p class="display uppercase tracking-[0.3em] text-rust text-sm font-700 mb-4">Zakres usług</p>
+        <h2 class="display font-900 uppercase text-4xl sm:text-5xl tracking-tight text-paper">Materiały i pokrycia<br />dachowe</h2>
+      </div>
+      <a href="uslugi.html" class="btn-ghost inline-flex items-center gap-2 rounded-sm px-6 py-3 font-semibold text-paper">
+        Pełna oferta
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- card 1 -->
+      <a href="uslugi.html#blachodachowka" class="card-lift group bg-ink/60 border border-white/10 rounded-sm p-7 flex flex-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C1541F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mb-6"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+        <h3 class="display font-700 text-xl uppercase text-paper mb-2">Blachodachówka</h3>
+        <p class="text-sm text-silver leading-relaxed">Sprzedaż i montaż pokryć imitujących dachówkę: trwałość blachy, estetyka tradycyjnego dachu.</p>
+      </a>
+      <!-- card 2 -->
+      <a href="uslugi.html#trapez" class="card-lift group bg-ink/60 border border-white/10 rounded-sm p-7 flex flex-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C1541F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mb-6"><path d="M2 18h2l2-8 2 8h2l2-8 2 8h2l2-8 2 8h2"/></svg>
+        <h3 class="display font-700 text-xl uppercase text-paper mb-2">Blacha trapezowa</h3>
+        <p class="text-sm text-silver leading-relaxed">Pokrycia dachów gospodarczych i przemysłowych: szybki montaż, wysoka wytrzymałość.</p>
+      </a>
+      <!-- card 3 -->
+      <a href="uslugi.html#rabek" class="card-lift group bg-ink/60 border border-white/10 rounded-sm p-7 flex flex-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C1541F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mb-6"><rect x="5" y="4" width="3" height="16"/><rect x="10.5" y="4" width="3" height="16"/><rect x="16" y="4" width="3" height="16"/></svg>
+        <h3 class="display font-700 text-xl uppercase text-paper mb-2">Blacha na rąbek</h3>
+        <p class="text-sm text-silver leading-relaxed">Rąbek stojący dla obiektów wymagających precyzyjnych, szczelnych obróbek blacharskich.</p>
+      </a>
+      <!-- card 4 -->
+      <a href="uslugi.html#papa" class="card-lift group bg-ink/60 border border-white/10 rounded-sm p-7 flex flex-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C1541F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mb-6"><path d="M12 2.5c1.4 2.8-2.4 4.3-2.4 8a2.4 2.4 0 0 0 4.8 0c0-1.1-.5-1.9-.5-1.9s1.4 1.6 1.4 4A4.3 4.3 0 0 1 11 17a4.3 4.3 0 0 1-4.3-4.3C6.7 7.8 12 6.4 12 2.5z"/></svg>
+        <h3 class="display font-700 text-xl uppercase text-paper mb-2">Papa termozgrzewalna</h3>
+        <p class="text-sm text-silver leading-relaxed">Pokrycia dachów płaskich metodą zgrzewania, skuteczna hydroizolacja na lata.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS BAND -->
+<section class="relative">
+  <div class="duotone-img h-[420px] sm:h-[480px] overflow-hidden">
+    <img src="images/membrana.webp" alt="Tekstura papy termozgrzewalnej na dachu płaskim" class="w-full h-full object-cover" />
+  </div>
+  <div class="absolute inset-0 flex items-center">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 w-full">
+      <div class="max-w-lg text-shadow-soft">
+        <p class="display uppercase tracking-[0.3em] text-rust text-sm font-700 mb-4">Materiały pokryciowe</p>
+        <h2 class="display font-900 uppercase text-3xl sm:text-4xl text-paper leading-tight">Materiał dobrany<br />do dachu, nie odwrotnie</h2>
+        <p class="mt-5 text-silver leading-relaxed">Dobieramy pokrycia i izolacje pod kąt dachu, obciążenia i budżet inwestycji, od hurtowni po plac budowy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPINIE -->
+<section id="opinie" class="relative bg-paper py-24 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <p class="display uppercase tracking-[0.3em] text-rust text-sm font-700 mb-4 text-center">Opinie</p>
+    <h2 class="display font-900 uppercase text-4xl sm:text-5xl tracking-tight text-ink text-center mb-14">Co mówią klienci</h2>
+
+    <div class="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <figure class="bg-white rounded-sm p-8 shadow-elevated relative">
+        <div class="flex items-center gap-1 text-rust mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <blockquote class="text-lg leading-relaxed text-steel-dark">"Profesjonalna hurtownia, super doradztwo. Polecam!"</blockquote>
+        <figcaption class="mt-6 flex items-center justify-between">
+          <span class="font-semibold text-ink">Sebastian Soj</span>
+          <span class="inline-flex items-center gap-1.5 text-xs text-steel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Opinia z Google
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-sm p-8 shadow-elevated relative">
+        <div class="flex items-center gap-1 text-rust mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 6.9L12 17.3 5.7 20.7l1.7-6.9L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <blockquote class="text-lg leading-relaxed text-steel-dark">"Polecam."</blockquote>
+        <figcaption class="mt-6 flex items-center justify-between">
+          <span class="font-semibold text-ink">Michał B.</span>
+          <span class="inline-flex items-center gap-1.5 text-xs text-steel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Opinia z Google
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="relative bg-ink py-24 sm:py-28 overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+    <div>
+      <p class="display uppercase tracking-[0.3em] text-rust text-sm font-700 mb-4">Kontakt</p>
+      <h2 class="display font-900 uppercase text-4xl sm:text-5xl tracking-tight text-paper leading-tight mb-8">Porozmawiajmy<br />o Twoim dachu</h2>
+      <p class="text-silver leading-relaxed max-w-md mb-10">Zadzwoń lub odwiedź nas w Siemianowicach Śląskich. Doradzimy w doborze materiału i wycenimy dostawę na budowę.</p>
+
+      <a href="tel:+48692161880" class="btn-primary inline-flex items-center gap-2 rounded-sm px-7 py-3.5 font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Zadzwoń: 692 161 880
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="bg-steel-dark/60 border border-white/10 rounded-sm p-6">
+        <p class="text-xs uppercase tracking-wider text-rust font-semibold mb-2">Adres / plac</p>
+        <p class="text-paper leading-relaxed">Obwodowa 4<br />41-100 Siemianowice Śląskie</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Obwodowa+4%2C+41-100+Siemianowice+%C5%9Al%C4%85skie" target="_blank" rel="noopener" class="nav-link inline-flex items-center gap-1.5 text-sm text-silver hover:text-paper mt-4">
+          Wyznacz trasę
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+      <div class="bg-steel-dark/60 border border-white/10 rounded-sm p-6">
+        <p class="text-xs uppercase tracking-wider text-rust font-semibold mb-2">Siedziba / korespondencja</p>
+        <p class="text-paper leading-relaxed">ul. Żeromskiego 13 lok. 1<br />41-103 Siemianowice Śląskie</p>
+      </div>
+      <div class="bg-steel-dark/60 border border-white/10 rounded-sm p-6 sm:col-span-2">
+        <p class="text-xs uppercase tracking-wider text-rust font-semibold mb-3">Godziny otwarcia</p>
+        <div class="grid grid-cols-2 gap-x-8 gap-y-1.5 text-sm text-silver">
+          <div class="flex justify-between"><span>Poniedziałek</span><span class="text-paper">7:30–15:30</span></div>
+          <div class="flex justify-between"><span>Wtorek</span><span class="text-paper">7:30–15:30</span></div>
+          <div class="flex justify-between"><span>Środa</span><span class="text-paper">7:30–15:30</span></div>
+          <div class="flex justify-between"><span>Czwartek</span><span class="text-paper">7:30–15:30</span></div>
+          <div class="flex justify-between"><span>Piątek</span><span class="text-paper">7:30–15:30</span></div>
+          <div class="flex justify-between"><span>Sobota</span><span class="text-steel">zamknięte</span></div>
+          <div class="flex justify-between"><span>Niedziela</span><span class="text-steel">zamknięte</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-steel-dark text-silver">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="display font-800 text-paper uppercase tracking-tight">Dach-Cynk</span>
+      </div>
+      <p class="text-sm leading-relaxed">Solidnie. Terminowo. Materiał dobrany do dachu.</p>
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-wider text-rust font-semibold mb-4">Nawigacja</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#o-firmie" class="hover:text-paper">O firmie</a></li>
+        <li><a href="uslugi.html" class="hover:text-paper">Usługi</a></li>
+        <li><a href="#opinie" class="hover:text-paper">Opinie</a></li>
+        <li><a href="#kontakt" class="hover:text-paper">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-wider text-rust font-semibold mb-4">Kontakt</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="tel:+48692161880" class="hover:text-paper">692 161 880</a></li>
+        <li>Obwodowa 4, 41-100 Siemianowice Śląskie</li>
+        <li>ul. Żeromskiego 13 lok. 1, 41-103 Siemianowice Śląskie</li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-wider text-rust font-semibold mb-4">Dane rejestrowe</p>
+      <ul class="space-y-2.5 text-sm">
+        <li>NIP: 6431059320</li>
+        <li>Adam Opiełka FHU Dach-Cynk</li>
+        <li><a href="https://www.krs-online.com.pl/firma/7365877-adam-opielka-fhu-dach-cynk" target="_blank" rel="noopener" class="hover:text-paper underline decoration-white/20 underline-offset-4">Profil w KRS-Online</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 text-xs text-steel flex flex-wrap justify-between gap-2">
+      <span>&copy; 2026 F.H.U. Dach-Cynk Adam Opiełka</span>
+      <span>Siemianowice Śląskie i okolice</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-menu-toggle]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+    });
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('mobile-menu').classList.add('hidden'); });
+  });
+</script>
+</body>
+</html>

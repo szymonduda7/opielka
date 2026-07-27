@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Dev screenshots (regenerated during design review, not part of the site)
+temporary screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
