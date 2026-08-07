@@ -16,3 +16,7 @@ Thumbs.db
 npm-debug.log*
 task.md
 claude.md
+
+# Logo source files - keep only the one actually used to produce images/logo.webp
+logo/*
+!logo/logo_white_CENTRUM (7).png
